@@ -1,7 +1,10 @@
+var speedX = 1;
+var speedY = 4;
 var x = 50;
 var y = 50;
-var speedY = Math.floor((Math.random() * 10) + 1);
-var speedX = Math.floor((Math.random() * 10) + 1);
+
+/** var xposition = [50,40,30,10];
+var yposition = [50,40,30,10]; */
 
 /**
  * setup
@@ -16,13 +19,24 @@ function setup() {
   background('black');
 }
 
-
 /**
  * draw
  * de code in deze functie wordt meerdere keren per seconde
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
+  /** for (var i = 0; i < xposition.length; i++) {
+
+    var x = xposition[i];
+    var y = yposition[i];
+
+    fill(100,100,255);
+    ellipse(x, y, 40,40);
+
+    x = x + speedX;
+    y = y + speedY;
+
+  };*/
 
   background('black');
   // stel vulkleur in
